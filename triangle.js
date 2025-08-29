@@ -37,3 +37,41 @@ function triangle(height){
 }
 
 triangle(height)
+
+/*
+Just tested the code, and it's functional, although I would like to point out that
+given the current output, the last base of the triangle is missing...
+
+Example:
+**
+* *
+*  *
+*   *
+
+Suggestions:
+- In line 27, you declared a variable 'char' to store the asterisk(*), yet at line 31, you still raw coded "*",
+therefore, you should utilize the variable
+
+- A better practice in programming is to write your comments above the code you're trying to explain/outline,
+in this way, other programmers will read your comment first before the code itself
+
+- When writing for loops, use '<' instead of '=<' as much as possible to follow conventions and avoid confusion
+
+- Although functional, a simpler solution would be to use a nested for loop:
+    * 1st loop => to iterate over the height of the triangle
+    * 2nd loop => display the '*' in the current row
+
+Try running this code:
+===============================================================
+for (let i = 1; i <= 5; ++i) {
+    for (let j = 0; j < i; ++j) process.stdout.write('*');
+    console.log();
+}
+===============================================================
+Pros:
+* Concise syntax & great use of for loops
+===============================================================
+
+"Padayon lang, I hope you learned from this problem!"
+- dreyyan
+*/
